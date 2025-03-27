@@ -1,0 +1,20 @@
+{
+	"compilerOptions": {
+		"outDir": "dist",
+		"types": ["node"],
+		"composite": true,
+		"noEmit": false,
+		"declaration": true
+	},
+	"exclude": [
+		"vitest.config.ts",
+		"vite.config.mts",
+		"vitest.config.ts",
+		"vitest.config.mts",
+		"**/*.spec.ts",
+		"**/*.test.ts",
+		"src/**/*.test.ts",
+		"src/**/*.spec.ts"
+	],
+	"include": ["src/lib/**/*.ts", "src/index.ts"]
+}
