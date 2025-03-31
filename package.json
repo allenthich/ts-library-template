@@ -15,7 +15,7 @@
 	"scripts": {
 		"dev": "tsx watch ./src/index.ts",
 		"test": "vitest",
-		"build": "tsup",
+		"build": "tsup --dts",
 		"lint": "pnpm biome lint --error-on-warnings",
 		"lint:fix": "pnpm biome lint --write .",
 		"format": "pnpm biome format",
@@ -62,6 +62,7 @@
 	"tsup": {
 		"format": ["cjs", "esm"],
 		"clean": true,
+		"cjsInterop": true,
 		"minify": true,
 		"entryPoints": ["src/index.ts"]
 	},
